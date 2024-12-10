@@ -1,0 +1,132 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #1abc9c;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #2980b9, #6dd5fa);
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.5rem;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+form input:focus, form textarea:focus, form button:hover {
+    outline: none;
+    border-color: #1abc9c;
+    background-color: #f8f8f8;
+}
+
+form button {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #16a085;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2c3e50;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
